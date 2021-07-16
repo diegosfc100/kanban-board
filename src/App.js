@@ -11,10 +11,27 @@ const task = {
     state: "Pendente"
 }
 
+let adAcc = 0;
+const generateId = () => {
+    idAcc += 1;
+    return idAcc;
+}
+
 //Anatomia de um componente React / Básicamente uma função JS.
 //Tudo deve encapsulado numa só div, ou seja, um nó.
 function App() {
     const [tasks, setTasks] = useState([]);
+
+    const addTask = (title, state) => {
+        const newTask = {
+            id: generateId(),
+            title,
+            state
+        }
+        setTasks((existingTasks) => {
+            return [...existingTasks, newTask]
+        })
+    }
 
   return (
     <div className="App">
