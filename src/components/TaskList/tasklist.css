@@ -1,0 +1,18 @@
+.tasklist {
+    padding: 8px;
+    background-color: #9ECCA4;
+    border-radius: 2px;
+}
+
+.tasklist .title {
+    padding: 4px;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.tasklist .content{
+    padding: 16px 4px;
+    display: flex;
+    flex-direction: column;
+}
