@@ -1,6 +1,7 @@
 import React from 'react';
 import './tasklist.css';
 import PropTypes from "prop-types";
+import plusIcon from "../../img/plus-icon.svg"
 
 import TaskItem from "../TaskItem/TaskItem"
 
@@ -20,22 +21,27 @@ export default function TaskList({
     return(
         <div className="tasklist">
             <div className="title">{title}</div>
-            <div className="content"></div>
-            {tasks.map((task) => {
-                return (
-                    <TaskItem 
-                        key={task.id} /* O react necessita dessa prop para renderizar os componentes */
-                        id={task.id}
-                        title={task.title}
-                        taskState={task.state}
-                        onTaskUpdate={onTaskUpdate}
-                        onDeleteTask={onDeleteTask}
-                    />
-                );
-            })}
-            <button onClick={addTask}>Adicionar Tarefa</button>
+            <div className="content">
+                {tasks.map((task) => {
+                    return (
+                        <TaskItem 
+                            key={task.id} /* O react necessita dessa prop para renderizar os componentes */
+                            id={task.id}
+                            title={task.title}
+                            taskState={task.state}
+                            onTaskUpdate={onTaskUpdate}
+                            onDeleteTask={onDeleteTask}
+                        />
+                    );
+                })}
+                {tasks.length === 0 && <div className="empty-list">Lista Vazia</div>}
+                <button onClick={addTask} className="btn">
+                <img src={plusIcon} alt="plus"></img>
+                Adicionar Tarefa
+            </button>
+            </div>         
         </div>
-    )
+    );
 }
 
 TaskList.propTypes = {
