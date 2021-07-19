@@ -28,12 +28,15 @@ export default function TaskItem({id, title, taskState, onTaskUpdate, onDeleteTa
 
     if (isEditing){
         return(
-            <input
-                type="text"
-                value={editableTitle}
-                onChange={onTitleChange}
-                onKeyPress={onKeyPress}
+            <div className="task-item">
+                <input
+                    type="text"
+                    value={editableTitle}
+                    onChange={onTitleChange}
+                    onKeyPress={onKeyPress}
                 />
+            </div>
+            
         );
     } else{
         return (
