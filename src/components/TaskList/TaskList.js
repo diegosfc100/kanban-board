@@ -2,6 +2,8 @@ import React from 'react';
 import './tasklist.css';
 import PropTypes from "prop-types";
 
+import TaskItem from "../TaskItem/TaskItem"
+
 export default function TaskList({title, onAddTask, tasks}) {
 
     const addTask = () => {
@@ -13,7 +15,14 @@ export default function TaskList({title, onAddTask, tasks}) {
             <div className="title">{title}</div>
             <div className="content"></div>
             {tasks.map((task) => {
-                return <div key={task.id}>{task.title}</div>
+                return (
+                    <TaskItem 
+                        key={task.id} /* O react necessita dessa prop para renderizar os componentes */
+                        id={task.id}
+                        title={task.title}
+                        taskState={task.state}
+                    />
+                );
             })}
             <button onClick={addTask}>Adicionar Tarefa</button>
         </div>
