@@ -44,7 +44,7 @@ export default function TaskItem({id, title, taskState, onTaskUpdate, onDeleteTa
                 <div onClick={(e) => setIsEditing(true)}>{editableTitle}</div>
                 <select onChange={onTaskStateChange} value={taskState}>
                     <option value="A Fazer">A Fazer</option>
-                    <option value="FAzendo">Fazendo</option>
+                    <option value="Fazendo">Fazendo</option>
                     <option value="Feito">Feito</option>
                 </select>
 

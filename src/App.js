@@ -13,7 +13,7 @@ const generateId = () => {
 
 //Anatomia de um componente React / Básicamente uma função JS.
 //Tudo deve encapsulado numa só div, ou seja, um nó.
-function App() {
+export default function App() {
     const [tasks, setTasks] = useState([]);
 
     const addTask = (title, state) => {
@@ -80,4 +80,3 @@ function App() {
   );
 }
 
-export default App;
