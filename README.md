@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+<!--Logo -->
+<h1 align="center">
+    <img src="./src/img/logo.png" alt="Logo-Netflix" width="50%"/><br>
+             Kanban Board
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- Descrição-->
+<h3 align="center">
+This project is just a learning example simple kanban-board.</h3>
 
-## Available Scripts
+<p align="center">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/diegosfc100/kanban-board.svg">
 
-In the project directory, you can run:
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/diegosfc100/kanban-board.svg">
 
-### `yarn start`
+  
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/diegosfc100/kanban-board.svg">
+  <a href="https://github.com/diegosfc100/kanban-board/commits/main">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/diegosfc100/kanban-board.svg">
+  </a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  <a href="https://github.com/lukemorales/react-native-design-code/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/diegosfc100/kanban-board.svg">
+  </a>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+  <img alt="GitHub" src="https://img.shields.io/github/license/diegosfc100/kanban-board.svg">
+</p>
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- Print-->
+<p align="center">
+  <img alt="print" src="/src/img/kanban.gif">
+</p>
 
-### `yarn build`
+<!--Demo-->
+<p align="center">
+  <a href="board-kanban.netlify.app/" target="_blank">
+      <img alt="Demo on Netlify" src="https://res.cloudinary.com/lukemorales/image/upload/v1599785319/readme_logos/demo_on_netlify_umjmch.png">
+   </a>
+</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<!-- Funcionalidades -->
+## 🔨 Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[✔] Add tasks to the list;
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[✔] Update already added tasks;
 
-### `yarn eject`
+[✔] Delete unwanted tasks;
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+[✔] Move tasks between lists;
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<!--Technologies-->
+## :rocket: Main concepts explored
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Introduction to JSX;
+- React components;
+- Styled components;
+- React Hooks;
+- State Management;
+- State and Props;
+- Conditional Rendering;
+- Events;
+- Rendering Lists;
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!--How to use -->
+## :information_source: How to use
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To clone and run this application, you'll need Git, Node.js v10.16 or higher + Yarn v1.13 or higher installed on your computer. From your command line:
+```shell
+# Clone this repository
+$ git clone https://github.com/diegosfc100/kanban-board.git
 
-### Analyzing the Bundle Size
+# Go into the repository
+$ cd kanban-board
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# Install dependencies
+$ yarn install
 
-### Making a Progressive Web App
+# Run the app
+$ yarn start
+```
+<!-- Contribuição -->
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+PRs are welcome:
 
-### Advanced Configuration
+- Fork this project.
+- Setup it:
+  ```
+  yarn
+  yarn start
+  ```
+- Make your change.
+- Please add yourself to the contributors table (we use [all contributors](https://allcontributors.org/docs/en/cli/installation) for that, we you will need that installed first):
+  ```
+  yarn contributors:add
+  ```
+- Open the PR.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+<!-- License -->
+## :memo: License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This project is under the MIT license. See the [LICENSE](https://github.com/diegosfc100/kanban-board/blob/main/LICENSE) for more information.
 
-### `yarn build` fails to minify
+-----------------
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Made with ♥ by Diego Rodrigues. :wave: [Get in touch!](https://www.linkedin.com/in/dgorodrigues7/)
