@@ -33,11 +33,8 @@ This project is just a learning example simple kanban-board.</h3>
 </p>
 
 <!--Demo-->
-<p align="center">
-  <a href="board-kanban.netlify.app/" target="_blank">
-      <img alt="Demo on Netlify" src="https://res.cloudinary.com/lukemorales/image/upload/v1599785319/readme_logos/demo_on_netlify_umjmch.png">
-   </a>
-</p>
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](board-kanban.netlify.app/).  
 
 <!-- Funcionalidades -->
 ## 🔨 Features
